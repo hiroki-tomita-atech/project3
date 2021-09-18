@@ -151,13 +151,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CD.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CollisionDetecsion.cpp" />
-    <ClInclude Include="CollisionDetection.h" />
+    <ClInclude Include="CD.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Player.h" />
   </ItemGroup>

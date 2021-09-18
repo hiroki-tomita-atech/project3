@@ -81,4 +81,3 @@ void Player::exitData()
 		DeleteGraph(act_img[i]);
 	}
 }
-

@@ -17,6 +17,7 @@ public:
 	void Update(); //< 更新処理
 	void Draw();   //< 描画処理
 	void Exit();   //< 終了処理
+	void CD();
 
 	int SetDir(DIR dir) { act_dir = dir; } //< 方向設定
 	int GetWidth() { return WIDTH; }	//< 横サイズ

@@ -1,12 +1,12 @@
 #include "DxLib.h"
 #include "Player.h"
 #include "Map.h"
-#include "CollisionDetection.h"
+#include "CD.h"
 
 // クラス
 Player player;
 Map map;
-CD cd;
+CD playercd;
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	LPSTR lpCmdLine, int nCmdShow)
@@ -35,6 +35,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	//------------------------------------------------------
 	// ゲーム初期化部分
 	//------------------------------------------------------
+
 	//マップの初期処理 
 	map.Init();
 	
@@ -60,9 +61,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 		// プレイヤー処理
 		player.Update();
 
-
 		// 当たり判定
-		//cd.CD1();
+		playercd.CD1();
 
 		// プレイヤー描画
 		player.Draw();

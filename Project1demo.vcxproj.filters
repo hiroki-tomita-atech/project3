@@ -24,6 +24,9 @@
     <ClCompile Include="Map.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="CD.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h">
@@ -32,11 +35,8 @@
     <ClInclude Include="Map.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="CollisionDetection.h">
+    <ClInclude Include="CD.h">
       <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="CollisionDetecsion.cpp">
-      <Filter>ソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
