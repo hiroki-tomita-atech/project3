@@ -29,6 +29,7 @@ void CD::CD1(Player *player)
 						_y /= SIZE_MAP_Y;
 						_y *= SIZE_MAP_Y;
 						y = _y;
+						// y や yadd のsetterを呼び出し、値を更新する
 						player->setY(y);
 						yadd = 0.0f;
 						player->setYAdd(yadd);

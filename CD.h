@@ -6,6 +6,7 @@
 class CD :public Map, public Player
 {
 public:
+	// player の元(値渡しだとコピーになる)を更新したいので、ポインタ渡しにする
 	void CD1(Player *player);
 
 	//

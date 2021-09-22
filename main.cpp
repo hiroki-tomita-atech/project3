@@ -62,6 +62,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 		player.Update();
 
 		// 当たり判定
+		// ポインタ渡しする
 		playercd.CD1(&player);
 
 		// プレイヤー描画

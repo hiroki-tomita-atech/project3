@@ -25,6 +25,7 @@ public:
 
 	float x, y;    //< •\¦À•W
 
+	// x, y, yadd ‚Ì‚»‚ê‚¼‚êsetter(‚Æˆê•”getter)‚ğ’è‹`
 	void setX(float arg) { x = arg; }
 	void setY(float arg) { y = arg; }
 	void setYAdd(float arg) { yadd = arg; };
