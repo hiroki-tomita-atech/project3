@@ -1,11 +1,12 @@
 #pragma once
 #include"Map.h"
 #include"Player.h"
+#include<stdio.h>
 
 class CD :public Map, public Player
 {
 public:
-	void CD1();
+	void CD1(Player *player);
 
 	//
 	// “–‚½‚è”»’è‚ğs‚¤ŠÖ”

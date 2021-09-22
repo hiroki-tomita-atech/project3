@@ -25,6 +25,11 @@ public:
 
 	float x, y;    //< •\¦À•W
 
+	void setX(float arg) { x = arg; }
+	void setY(float arg) { y = arg; }
+	void setYAdd(float arg) { yadd = arg; };
+	float getYAdd() { return yadd; };
+
 protected:
 	static const int ACT_DIR_SLIDE = 3;
 	static const int ACT_DIR_NUM = 4;

@@ -4,8 +4,11 @@
 #define NOMINMAX
 #include "CD.h"
 
-void CD::CD1()
+// void CD::CD1(float x, float y)
+void CD::CD1(Player *player)
 {
+	float x = player->x;
+	float y = player->y;
 
 	// ブロックの当たり判定
 	for (int j = 0; j < NUM_MAP_Y; j++)
@@ -26,7 +29,9 @@ void CD::CD1()
 						_y /= SIZE_MAP_Y;
 						_y *= SIZE_MAP_Y;
 						y = _y;
+						player->setY(y);
 						yadd = 0.0f;
+						player->setYAdd(yadd);
 					}
 					else
 						// 左右から当たっている
@@ -36,6 +41,7 @@ void CD::CD1()
 							_x /= SIZE_MAP_X;
 							_x *= SIZE_MAP_X;
 							x = _x;
+							player->setX(x);
 						}
 				}
 				//// 敵キャラの壁当たり判定

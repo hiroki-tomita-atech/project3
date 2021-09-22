@@ -62,7 +62,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 		player.Update();
 
 		// “–‚½‚è”»’è
-		playercd.CD1();
+		playercd.CD1(&player);
 
 		// ƒvƒŒƒCƒ„[•`‰æ
 		player.Draw();
